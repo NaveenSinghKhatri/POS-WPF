@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication2.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Window4" Height="478.864" Width="681.046" Background="#FF0074FF" Foreground="White">
+    <Grid Margin="-2,10,0,0" Height="434" VerticalAlignment="Top" HorizontalAlignment="Left" Width="673">
+        <Label x:Name="lblCategoryID" Content="Category ID" HorizontalAlignment="Left" Height="32" Margin="41,28,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
+        <Label x:Name="lblCategoryID_Copy" Content="Category ID" HorizontalAlignment="Left" Height="32" Margin="41,28,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
+        <Label x:Name="lblCategoryID_Copy1" Content="Category Name" HorizontalAlignment="Left" Height="32" Margin="41,98,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
+        <Label x:Name="lblCategoryID_Copy2" Content="Image " HorizontalAlignment="Left" Height="32" Margin="41,184,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
+        <TextBox x:Name="txtCategoryID" HorizontalAlignment="Center" Height="32" Margin="155,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Foreground="White" Background="#FF2300FF" FontSize="16" FontFamily="Segoe UI Semibold"/>
+        <TextBox x:Name="txtCategoryName" HorizontalAlignment="Center" Height="32" Margin="296,98,142,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Foreground="White" Background="#FF2300FF" FontSize="16" FontFamily="Segoe UI Semibold"/>
+        <Image x:Name="imgCategoryImage" HorizontalAlignment="Left" Height="150" Margin="302,184,0,0" VerticalAlignment="Top" Width="176" Stretch="Fill"/>
+        <Button x:Name="btnBrowse" Content="Browse..." HorizontalAlignment="Left" Height="32" Margin="155,184,0,0" VerticalAlignment="Top" Width="79" Foreground="White" FontFamily="Segoe UI Semibold" Click="btnBrowse_Click">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnOk" Content="Add New" HorizontalAlignment="Left" Height="32" Margin="302,366,0,0" VerticalAlignment="Top" Width="86" Click="btnOk_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="32" Margin="393,366,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="lblFilename" Content="" HorizontalAlignment="Left" Height="27" Margin="302,339,0,0" VerticalAlignment="Top" Width="347" Foreground="White"/>
+
+    </Grid>
+</Window>

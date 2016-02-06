@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApplication2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="Admin Login" Height="171.24" Width="309.928" WindowStyle="ThreeDBorderWindow" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid RenderTransformOrigin="0,0" Margin="0,0,0,-6" HorizontalAlignment="Left" Width="302">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF1A4CA2" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Left" Margin="146,99,0,0" VerticalAlignment="Top" Width="75" Background="White" Foreground="#FF0046FF" Click="btnOk_Click" Grid.Column="2" KeyDown="btnOk_KeyDown"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="6,36,0,0" VerticalAlignment="Top" Foreground="White" Grid.Column="2"/>
+        <TextBox x:Name="adminid" HorizontalAlignment="Left" Height="18" Margin="101,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="#FF002EFF" ForceCursor="True" Grid.Column="2"/>
+        <Label x:Name="label_Copy" Content="Password" HorizontalAlignment="Left" Margin="5,60,0,0" VerticalAlignment="Top" Foreground="White" Grid.Column="2"/>
+        <PasswordBox x:Name="admin_password" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="101,68,0,0" VerticalAlignment="Top" Width="120" TextInput="admin_password_TextInput" SelectionOpacity="0.1" KeyDown="btnOk_Pressed"/>
+       
+    </Grid>
+</Window>

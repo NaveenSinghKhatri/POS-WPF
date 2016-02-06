@@ -1,0 +1,56 @@
+c:\users\mansi\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe.config
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.exe
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\WpfApplication2.pdb
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\AdminWindow.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window2.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.lref
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\AdminWindow.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window2.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.g.resources
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.Properties.Resources.resources
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.csproj.GenerateResource.Cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.exe
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2.pdb
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window3.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\WpfApplication2_Content.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.dll
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.xml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window3.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window4.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Window4.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\WpfApplication2.exe.config
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.exe
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.pdb
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\WpfApplication2.exe
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\WpfApplication2.pdb
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\EntityFramework.dll
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\EntityFramework.xml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\MainWindow.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\AdminWindow.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window2.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window3.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window4.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\App.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2_Content.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2_MarkupCompile.lref
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\MainWindow.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\AdminWindow.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window2.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window3.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\Window4.baml
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.g.resources
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.Properties.Resources.resources
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\WpfApplication2.csproj.GenerateResource.Cache
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\AddProduct.g.cs
+C:\Users\mansi\Documents\Visual Studio 2015\Projects\POS WPF\WpfApplication2\obj\Debug\AddProduct.baml
