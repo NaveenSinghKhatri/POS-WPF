@@ -19,10 +19,18 @@ namespace WpfApplication2
     /// </summary>
     public partial class Window3 : Window
     {
+        POS db = new POS();
         public Window3()
         {
             InitializeComponent();
-        }
+
+            //Display Products List in the List Box
+            var ProductList = db.Products.ToList();
+            this.listBox.ItemsSource = ProductList;
+            this.listBox.DisplayMemberPath = "Name";
+            this.listBox.SelectedValuePath = "ID";
+
+        } 
 
         private void Add_Categories_Click(object sender, RoutedEventArgs e)
         {
@@ -36,5 +44,7 @@ namespace WpfApplication2
             AddProduct newProduct = new AddProduct();
             newProduct.Show();
         }
+
+       
     }
 }

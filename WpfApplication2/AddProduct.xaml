@@ -22,7 +22,7 @@
         <Label x:Name="lblProductCategory" Content="Product Category" HorizontalAlignment="Left" Height="32" Margin="39,356,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
         <TextBox x:Name="txtProductDescription" HorizontalAlignment="Center" Height="62" Margin="258,209,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
         <TextBox x:Name="txtProductBarcode" HorizontalAlignment="Center" Height="32" Margin="258,296,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <ComboBox x:Name="comboCategories" HorizontalAlignment="Left" Margin="260,356,0,0" VerticalAlignment="Top" Width="276" FontSize="16" Foreground="#FF0C00FF" ItemsSource="{Binding}" Height="32" IsSynchronizedWithCurrentItem="True" SelectionChanged="comboCategories_SelectionChanged" SelectedIndex="7">
+        <ComboBox x:Name="comboCategories" HorizontalAlignment="Left" Margin="260,356,0,0" VerticalAlignment="Top" Width="276" FontSize="16" Foreground="#FF0C00FF" ItemsSource="{Binding}" Height="32" IsSynchronizedWithCurrentItem="True" SelectionChanged="comboCategories_SelectionChanged" SelectedIndex="0">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>

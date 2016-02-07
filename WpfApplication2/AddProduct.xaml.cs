@@ -19,50 +19,43 @@ namespace WpfApplication2
     /// </summary>
     public partial class AddProduct : Window
     {
+        
+        POS db = new POS();
+
         public AddProduct()
         {
             InitializeComponent();
-            //trial
-            FillCategoriesComboBox();
-            // xx
 
+            // Show Categories List in  comboCategories box
+           
+            var categorylist = db.Categories.ToList();
+            
+            this.comboCategories.ItemsSource = categorylist;
+            this.comboCategories.DisplayMemberPath = "ProductCategory";
+            this.comboCategories.SelectedValuePath = "ID";
 
-    }
+        }
+        
 
-        // << --              Bind COMBOBOX     Trial & Error                   -- >>    //
        
-
-
-
-
-
-
-
-
-
-
-
-        // << --                 XXXXXXXXXXXXXXXXXXXXXXX             -- >>    //
-        private void btnOk_Click(object sender, RoutedEventArgs e)
+        public void btnOk_Click(object sender, RoutedEventArgs e)
         {
-            using (var details = new POS())
-            {
-                var p = new Product();
-                //add product id, product name, desc, barcode, costprice, selling price,
-                //stock on hand 
+
+            var p = new Product();
+            //add product id, product name, desc, barcode, ProductCategory, costprice, selling price,
+            //stock on hand, 
                 p.ID = Convert.ToInt32(txtProductID.Text);
                 p.Name = txtProductName.Text;
                 p.Description = txtProductDescription.Text;
                 p.Barcode = txtProductBarcode.Text;
-
+                p.Category = Convert.ToInt32(comboCategories.SelectedValue);
                 p.CostPrice = Convert.ToInt32(txtCostPrice.Text);
                 p.SellingPrice = Convert.ToInt32(txtSellingPrice.Text);
                 p.SOH = Convert.ToInt32(txtSOH.Text);
-                details.Products.Add(p);
-                details.SaveChanges();
+                db.Products.Add(p);
+                db.SaveChanges();
                 Close();
-
-            }
+            
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
@@ -77,6 +70,11 @@ namespace WpfApplication2
                 
          }
 
+        private void comboCategories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+
         }
+    }
     }
 
