@@ -58,6 +58,7 @@ namespace WpfApplication2
             txtCategoryID.Clear();
             txtCategoryName.Clear();
             imgCategoryImage.Source = null;
+            lblFilename.Content = "";
 
         }
         //<< --------------------------   >>//
@@ -69,7 +70,7 @@ namespace WpfApplication2
 
             // Set filter for file extension and default file extension 
             dlg.DefaultExt = ".jpg";
-            dlg.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif";
+            dlg.Filter = "JPG Files (*.jpg)|*.jpeg|PNG Files (*.png)|*.png|JPEG Files (*.jpeg)|*.jpeg|GIF Files (*.gif)|*.gif";
 
 
             // Display OpenFileDialog by calling ShowDialog method 
@@ -86,6 +87,13 @@ namespace WpfApplication2
             }
 
         }
-       
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 AddProductsorCategories = new Window3();
+            AddProductsorCategories.Show();
+            this.Close();
+
+        }
     }
 }

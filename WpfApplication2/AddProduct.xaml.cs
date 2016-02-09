@@ -33,7 +33,6 @@ namespace WpfApplication2
             this.comboCategories.ItemsSource = categorylist;
             this.comboCategories.DisplayMemberPath = "ProductCategory";
             this.comboCategories.SelectedValuePath = "ID";
-
         }
         
 
@@ -54,13 +53,26 @@ namespace WpfApplication2
                 p.SOH = Convert.ToInt32(txtSOH.Text);
                 db.Products.Add(p);
                 db.SaveChanges();
-                Close();
-            
+            ClearWindow();
+         }
+
+        public void ClearWindow()
+        {
+            txtProductID.Clear();
+            txtProductName.Clear();
+            txtProductDescription.Clear();
+            txtProductBarcode.Clear();
+            txtCostPrice.Clear();
+            txtSellingPrice.Clear();
+            txtSOH.Clear();
+                        
+
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
+            
 
         }
 
@@ -74,6 +86,13 @@ namespace WpfApplication2
         {
             
 
+        }
+
+        private void AddProduct_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Window3 Win3 = new Window3();
+            Win3.Show();
+            
         }
     }
     }

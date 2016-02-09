@@ -5,39 +5,467 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Window3" Height="670.868" Width="852.779" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#FF216EF5" Foreground="White">
-    <Grid AllowDrop="True">
+        Title="Window3" Height="808.868" Width="1487.779" WindowState="Maximized" WindowStartupLocation="CenterScreen" Background="#FF216EF5" Foreground="White">
+    <Grid x:Name="btns" AllowDrop="True" Margin="3,-81,-18,77" HorizontalAlignment="Left" Width="1495">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="748*"/>
+            <ColumnDefinition Width="813*"/>
+            <ColumnDefinition Width="141*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="45*"/>
-            <RowDefinition Height="544*"/>
-            <RowDefinition Height="51"/>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="659*"/>
+            <RowDefinition Height="68*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="Category_Grid" Height="314" Margin="426,141,137,89.5" Width="282" Grid.Row="1">
-            <Grid x:Name="CategoriesImageList" Margin="24,10,30,10">
-                <Image x:Name="image" Height="100" Width="100" Margin="10,10,0,0"/>
-                <Image x:Name="image_Copy" Height="100" Width="100" Margin="128,10,0,0">
-                    <Image.OpacityMask>
-                        <ImageBrush/>
-                    </Image.OpacityMask>
+        <Label x:Name="label" Content="Products List" Margin="187,3,68,3" Background="{x:Null}" Foreground="White" FontFamily="Segoe UI Black" FontSize="18.667"/>
+        <Grid Margin="194,51,174,5" Grid.Row="1"/>
+        <ListBox x:Name="listBox" Margin="90,24,80,68" Foreground="#FF005DFF" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Row="1"/>
+        <Border BorderBrush="#FF050078" BorderThickness="5" Margin="90,20,80,67" Grid.Row="1"/>
+        <Label x:Name="lblCLIST" Content="Categories List" Margin="0,6,231,0" Background="{x:Null}" Foreground="White" FontFamily="Segoe UI Black" FontSize="18.667" Grid.Column="1" HorizontalAlignment="Right" Width="145"/>
+        <Grid x:Name="g1" Background="#FF216EF5" Margin="16,0,0,31" Grid.Row="1" Grid.Column="1" Visibility="Visible" Height="553" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="705" Grid.ColumnSpan="2">
+            <Grid x:Name="CategoriesGrid" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c0" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c1" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c2" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c3" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image0" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
                 </Image>
-                <Image x:Name="image_Copy1" Height="100" Width="100" Margin="16,158,0,0"/>
-                <Image x:Name="image_Copy2" Height="100" Width="100" Margin="128,153,0,0">
-                    <Image.OpacityMask>
-                        <ImageBrush/>
-                    </Image.OpacityMask>
+                <Image x:Name="image1" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
                 </Image>
-                <Label x:Name="C1" Content="CATEGORY 1" Margin="16,127,0,0" FontFamily="Segoe UI Black" Foreground="White"/>
-                <Label x:Name="C2" Content="CATEGORY 2" Margin="128,127,0,0" FontFamily="Segoe UI Black" Foreground="White"/>
-                <Label x:Name="C3" Content="CATEGORY 3" Margin="16,268,0,0" FontFamily="Segoe UI Black" Foreground="White"/>
-                <Label x:Name="C4" Content="CATEGORY 4" Margin="128,268,0,0" FontFamily="Segoe UI Black" Foreground="White"/>
+                <Image x:Name="image2" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image3" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
             </Grid>
         </Grid>
-        <Label x:Name="label" Content="Products List" Margin="18,12,737,5" Background="{x:Null}" Foreground="White" FontFamily="Segoe UI Black"/>
-        <Label x:Name="CategoriesList" Content="Categories" Margin="426,10,10,0" Background="{x:Null}" Foreground="White" FontFamily="Segoe UI Black" Grid.RowSpan="2"/>
-        <Button x:Name="Add_Categories" Content="Add Category" Height="27" Margin="702,8,29,16" Width="114" Click="Add_Categories_Click" Grid.Row="2"/>
-        <Button x:Name="Add_Product" Content="Add Product" Margin="32,8,699,0" Width="114" Click="Add_Product_Click" Grid.Row="2" Height="27" VerticalAlignment="Top"/>
-        <Grid HorizontalAlignment="Left" Height="544" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="411"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="534" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="416" Foreground="#FF005DFF" FontSize="16" FontFamily="Segoe UI Semibold"/>
+        <Grid x:Name="g2" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid1" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c4" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c5" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c6" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c7" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image4" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image5" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image6" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image7" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g3" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid2" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c8" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c9" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c10" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c11" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image8" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image9" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image10" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image11" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g4" Background="#FFE5E5E5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid3" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c12" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c13" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c14" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c15" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image12" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image13" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image14" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image15" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g5" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid4" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c16" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c17" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c18" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c19" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image16" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image17" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image18" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image19" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g6" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid5" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c20" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c21" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c22" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c23" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image20" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image21" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image22" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image23" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g7" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid6" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c24" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c25" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c26" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c27" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image24" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image25" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image26" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image27" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g8" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid7" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c28" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c29" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c30" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c31" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image28" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image29" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image30" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image31" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g9" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid8" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c32" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c33" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c34" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c35" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image32" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image33" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image34" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image35" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Grid x:Name="g10" Background="#FF216EF5" Margin="10,21,16,17" Grid.Row="1" Grid.Column="1" Visibility="Hidden">
+            <Grid x:Name="CategoriesGrid9" Height="516" Margin="34,14,32,18" Width="691">
+                <Label x:Name="c36" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="79,250,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c37" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,250,0,0" VerticalAlignment="Top" Height="28" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c38" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="73,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Label x:Name="c39" Content="NO CATEGORY" HorizontalAlignment="Left" Margin="415,473,0,0" VerticalAlignment="Top" Height="33" Width="266" FontSize="16" FontFamily="Segoe UI Black" Foreground="Red">
+                    <Label.BindingGroup>
+                        <BindingGroup/>
+                    </Label.BindingGroup>
+                </Label>
+                <Image x:Name="image36" HorizontalAlignment="Left" Height="223" Margin="10,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image37" HorizontalAlignment="Left" Height="223" Margin="345,10,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image38" HorizontalAlignment="Left" Height="190" Margin="10,283,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+                <Image x:Name="image39" HorizontalAlignment="Left" Height="190" Margin="345,278,0,0" VerticalAlignment="Top" Width="266">
+                    <Image.BindingGroup>
+                        <BindingGroup/>
+                    </Image.BindingGroup>
+                </Image>
+            </Grid>
+        </Grid>
+        <Button x:Name="btnNext" Content="&gt;" Margin="322,8,330,1" Grid.Row="2" Click="btnNext_Click" Grid.Column="1" Foreground="Blue" Background="White" FontSize="16"/>
+        <Button x:Name="btnPrevious" Content="&lt;" Margin="259,7,393,1" Grid.Row="2" Click="btnPrevious_Click" Grid.Column="1" Foreground="Blue" Background="White" FontSize="16"/>
+        <Button x:Name="Add_Categories" Content="+" Margin="515,0,74,6" Click="Add_Categories_Click_1" Grid.Row="2" Grid.Column="1" Height="53" VerticalAlignment="Bottom" Foreground="Blue" Background="White" FontSize="16"  RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="Add_Product" Content="Add Product" Margin="216,7,211,4" Click="Add_Product_Click" Grid.Row="2" Background="White" Foreground="Blue" FontSize="18.667"/>
 
     </Grid>
 </Window>

@@ -5,24 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication2"
         mc:Ignorable="d"
-        Title="Add a new Product " Height="584.408" Width="1125.899" Background="#FF0017FF">
+        Title="Add a new Product " Height="584.408" Width="1125.899" Background="#FF0017FF" Closing="AddProduct_Closing">
     <Grid HorizontalAlignment="Left" Width="859" Margin="0,0,0,-2">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="554*"/>
             <ColumnDefinition Width="305*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="lblProductID" Content="Product ID" HorizontalAlignment="Left" Height="32" Margin="39,109,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
-        <Label x:Name="lblCategoryID_Copy1" Content="Name" HorizontalAlignment="Left" Height="32" Margin="39,157,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
-        <TextBox x:Name="txtProductID" HorizontalAlignment="Center" Height="32" Margin="258,109,166,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <TextBox x:Name="txtProductName" HorizontalAlignment="Center" Height="32" Margin="258,157,120,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <Button x:Name="btnOk" Content="Add New" HorizontalAlignment="Left" Height="32" Margin="0,491,0,0" VerticalAlignment="Top" Width="86" Click="btnOk_Click" Grid.Column="1"/>
-        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="32" Margin="174,491,0,0" VerticalAlignment="Top" Width="86" Grid.Column="1" Click="btnClose_Click"/>
-        <Label x:Name="lblProductDescription" Content="Description" HorizontalAlignment="Left" Height="32" Margin="39,209,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
-        <Label x:Name="lblCategoryID_Copy2" Content="Barcode" HorizontalAlignment="Left" Height="32" Margin="39,296,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
-        <Label x:Name="lblProductCategory" Content="Product Category" HorizontalAlignment="Left" Height="32" Margin="39,356,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontFamily="Segoe UI Black" FontSize="16"/>
-        <TextBox x:Name="txtProductDescription" HorizontalAlignment="Center" Height="62" Margin="258,209,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <TextBox x:Name="txtProductBarcode" HorizontalAlignment="Center" Height="32" Margin="258,296,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold"/>
-        <ComboBox x:Name="comboCategories" HorizontalAlignment="Left" Margin="260,356,0,0" VerticalAlignment="Top" Width="276" FontSize="16" Foreground="#FF0C00FF" ItemsSource="{Binding}" Height="32" IsSynchronizedWithCurrentItem="True" SelectionChanged="comboCategories_SelectionChanged" SelectedIndex="0">
+        <Label x:Name="lblProductID" Content="Product ID" HorizontalAlignment="Left" Height="32" Margin="39,109,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblCategoryID_Copy1" Content="Name" HorizontalAlignment="Left" Height="32" Margin="39,157,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtProductID" HorizontalAlignment="Center" Height="32" Margin="258,109,166,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtProductName" HorizontalAlignment="Center" Height="32" Margin="258,157,120,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnOk" Content="Add New" HorizontalAlignment="Left" Height="32" Margin="0,491,0,0" VerticalAlignment="Top" Width="86" Click="btnOk_Click" Grid.Column="2"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Height="32" Margin="174,491,0,0" VerticalAlignment="Top" Width="86" Grid.Column="2" Click="btnClose_Click"/>
+        <Label x:Name="lblProductDescription" Content="Description" HorizontalAlignment="Left" Height="32" Margin="39,209,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblCategoryID_Copy2" Content="Barcode" HorizontalAlignment="Left" Height="32" Margin="39,296,0,0" VerticalAlignment="Top" Width="139" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblProductCategory" Content="Product Category" HorizontalAlignment="Left" Height="32" Margin="39,356,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtProductDescription" HorizontalAlignment="Center" Height="62" Margin="258,209,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtProductBarcode" HorizontalAlignment="Center" Height="32" Margin="258,296,20,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Foreground="#FF0C00FF" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="comboCategories" HorizontalAlignment="Left" Margin="260,356,0,0" VerticalAlignment="Top" Width="276" FontSize="16" Foreground="#FF0C00FF" ItemsSource="{Binding}" Height="32" IsSynchronizedWithCurrentItem="True" SelectionChanged="comboCategories_SelectionChanged" SelectedIndex="0" Grid.ColumnSpan="2">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -30,15 +31,15 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label x:Name="lblTitle" Content="Add a new product" HorizontalAlignment="Left" Height="47" Margin="39,22,0,0" VerticalAlignment="Top" Width="397" Foreground="White" FontFamily="Segoe UI Black" FontSize="29.333"/>
-        <Label x:Name="lblCostPrice" Content="Product Cost" HorizontalAlignment="Left" Height="32" Margin="131,109,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="1"/>
-        <TextBox x:Name="txtCostPrice" HorizontalAlignment="Center" Height="32" Margin="350,109,-175,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
-        <Label x:Name="lblSellingPrice" Content="Selling Price" HorizontalAlignment="Left" Height="32" Margin="133,159,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="1"/>
-        <TextBox x:Name="txtSellingPrice" HorizontalAlignment="Center" Height="32" Margin="352,159,-177,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
-        <Label x:Name="lblSOH" Content="Stock on hand" HorizontalAlignment="Left" Height="32" Margin="133,209,0,0" VerticalAlignment="Top" Width="127" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="1"/>
-        <TextBox x:Name="txtSOH" HorizontalAlignment="Center" Height="32" Margin="352,209,-177,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="1"/>
-        <Label x:Name="lblProductCategory_Copy" Content="Product Category" HorizontalAlignment="Left" Height="32" Margin="136,264,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="1"/>
-        <ListBox x:Name="lstboxSupplier" Grid.Column="1" HorizontalAlignment="Left" Height="178" Margin="352,264,-235,0" VerticalAlignment="Top" Width="188" FontSize="16" Foreground="Blue">
+        <Label x:Name="lblTitle" Content="Add a new product" HorizontalAlignment="Left" Height="47" Margin="39,22,0,0" VerticalAlignment="Top" Width="397" Foreground="White" FontFamily="Segoe UI Black" FontSize="29.333" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblCostPrice" Content="Product Cost" HorizontalAlignment="Left" Height="32" Margin="131,109,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="2"/>
+        <TextBox x:Name="txtCostPrice" HorizontalAlignment="Center" Height="32" Margin="350,109,-175,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
+        <Label x:Name="lblSellingPrice" Content="Selling Price" HorizontalAlignment="Left" Height="32" Margin="133,159,0,0" VerticalAlignment="Top" Width="109" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="2"/>
+        <TextBox x:Name="txtSellingPrice" HorizontalAlignment="Center" Height="32" Margin="352,159,-177,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
+        <Label x:Name="lblSOH" Content="Stock on hand" HorizontalAlignment="Left" Height="32" Margin="133,209,0,0" VerticalAlignment="Top" Width="127" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="2"/>
+        <TextBox x:Name="txtSOH" HorizontalAlignment="Center" Height="32" Margin="352,209,-177,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="Blue" Background="White" FontSize="16" FontFamily="Segoe UI Semibold" Grid.Column="2"/>
+        <Label x:Name="lblProductCategory_Copy" Content="Product Category" HorizontalAlignment="Left" Height="32" Margin="136,264,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontFamily="Segoe UI Black" FontSize="16" Grid.Column="2"/>
+        <ListBox x:Name="lstboxSupplier" Grid.Column="2" HorizontalAlignment="Left" Height="178" Margin="352,264,-235,0" VerticalAlignment="Top" Width="188" FontSize="16" Foreground="Blue">
             <ListBoxItem Content="No Supplier" Foreground="Blue"/>
         </ListBox>
 
